@@ -11,14 +11,14 @@ public class SpeedConverter {
     public double speedKmToMi(double speedKm) {
 //        TODO implements result
         double result = 0.0;
-        return result;
+        return (speedKm/1.60926939169617);
     }
 
     @Step
     public double speedMiToKm(double speedMi) {
 //        TODO implements result
         double result = 0.0;
-        return result;
+        return (speedMi*1.60926939169617);
     }
 
 }

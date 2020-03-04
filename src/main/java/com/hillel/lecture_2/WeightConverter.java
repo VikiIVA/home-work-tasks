@@ -11,14 +11,14 @@ public class WeightConverter {
     public double kilogramsToPounds(double kilograms) {
 //        TODO implements result
         double result = 0.0;
-        return result;
+        return (kilograms*2.20462);
     }
 
     @Step
     public double poundsToKilograms(double pounds) {
 //        TODO implements result
         double result = 0.0;
-        return result;
+        return (pounds/2.20460);
     }
 
 }

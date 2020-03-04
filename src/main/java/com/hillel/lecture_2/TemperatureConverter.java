@@ -11,20 +11,20 @@ public class TemperatureConverter {
     public double celsiusToFahrenheit(double celsius) {
 //       TODO implements result Convert Celsius to Fahrenheit
         double result = 0.0;
-        return result;
+        return (celsius*9/5)+32;
     }
 
     @Step
     public double fahrenheitToCelsius(double fahrenheit) {
 //        TODO implements result convert Fahrenheit to Celsius
         double result = 0.0;
-        return result;
+        return (fahrenheit-32)*5/9;
     }
 
     @Step
     public double celsiusToKelvin(double celsius) {
 //        TODO implements result convert Celsius to Kelvin
         double result = 0.0;
-        return result;
+        return (celsius+273.16);
     }
 }
