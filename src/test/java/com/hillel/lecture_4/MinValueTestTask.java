@@ -16,13 +16,26 @@ public class MinValueTestTask {
         int[] data = { 1, -5, 10, 45, -34, 0, 0, 24, 2 };
         int expectedResult = -34;
 
-        assertEquals(minValueChecker.getValue(data), expectedResult) ;
+        for (int i : data)
+            {
+            if (i == expectedResult) {
+                System.out.println(expectedResult);
+            }
+        }
+
+//        assertEquals(minValueChecker.getValue(data), expectedResult) ;
     }
 
     @Test
     public void checkMinValueTest2() {
         int[] data = { 1234, 5234, 234, 24689, 24, 2789, 0, 78, 6295 };
         int expectedResult = 0;
+        for (int i : data)
+        {
+            if (i == expectedResult) {
+                System.out.println(expectedResult);
+            }
+        }
 
         assertEquals(minValueChecker.getValue(data), expectedResult) ;
     }

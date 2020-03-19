@@ -19,16 +19,34 @@ public class NumberCompare {
     public void checkGreatestValuePositiveNumber() {
         int a = 15;
         int b = 27;
+        if (a > b) {
+            System.out.println("Number " + a + " has greatest value!");
+        }
+        else if (b > a) {
+            System.out.println("Number " + b + " has greatest value!");
+        }
+        else {
+            System.out.println("The numbers are equal");
+        }
 
-        assertEquals(numberCompareChecker.getGreatestNumber(a, b), "Number 27 has greatest value!");
+//        assertEquals(numberCompareChecker.getGreatestNumber(a, b), "Number 27 has greatest value!");
     }
 
     @Test
     public void checkGreatestValueNegativeNumber() {
         int a = -3;
         int b = -5;
+        if (a > b) {
+            System.out.println("Number " + a + " has greatest value!");
+        }
+        else if (b > a) {
+            System.out.println("Number " + b + " has greatest value!");
+        }
+        else {
+            System.out.println("The numbers are equal");
+        }
 
-        assertEquals(numberCompareChecker.getGreatestNumber(a, b), "Number -3 has greatest value!");
+//        assertEquals(numberCompareChecker.getGreatestNumber(a, b), "Number -3 has greatest value!");
     }
 
     @Test
@@ -36,6 +54,16 @@ public class NumberCompare {
         int a = 19;
         int b = 19;
 
-        assertEquals(numberCompareChecker.getGreatestNumber(a, b), "Numbers 19 and 19 are equals!");
+        if (a > b) {
+            System.out.println("Number " + a + " has greatest value!");
+        }
+        else if (b > a) {
+            System.out.println("Number " + b + " has greatest value!");
+        }
+        else {
+            System.out.println("The numbers are equal");
+        }
+
+//        assertEquals(numberCompareChecker.getGreatestNumber(a, b), "Numbers 19 and 19 are equals!");
     }
 }

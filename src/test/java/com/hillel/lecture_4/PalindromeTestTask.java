@@ -14,8 +14,24 @@ public class PalindromeTestTask {
 
     @Test(dataProvider = "palindromeProvider")
     public void palindromeTest(String word, boolean expectedResult) {
-        assertEquals(palindromeChecker.isPalindrome(word), expectedResult); ;
+        char[] string = new char[5];
+        if(string.length%2 == 0){
+            for(int i = 0; i < string.length/2-1; i++){
+                if(string[i] != string[string.length-i-1]){
+                    System.out.println(word + " " + expectedResult);
+                }
+            }
+        }else{
+            for(int i = 0; i < (string.length-1)/2-1; i++){
+                if(string[i] != string[string.length-i-1]){
+                    System.out.println(word + " " + expectedResult);
+                }
+            }
+        }
+        System.out.println(word + " " + expectedResult);
     }
+//        assertEquals(palindromeChecker.isPalindrome(word), expectedResult); ;
+
 
 
     @DataProvider(name = "palindromeProvider")

@@ -30,8 +30,28 @@ public class QuadraticEquation {
         int a = 0;
         int b = 30;
         int c = 12;
+        double x1;
+        double x2;
+        double d;
+        d = (b * b) - (4 * a * c);
 
-        assertEquals(quadraticEquationChecker.checkQuadraticEquation(a, b, c), "The 'a' coefficient should not be zero!") ;
+        if (a==0) {
+            System.out.println("The 'a' coefficient should not be zero!");
+        }
+        else if (d < 0) {
+            System.out.println("No roots on the set of real numbers!");
+        }
+        else if (d ==0) {
+            x1 = (-b) / (2*a);
+            System.out.println("x1 = x2 = " + x1);
+        }
+        else {
+            x1 = (-b + Math.sqrt(d)) / (2*a);
+            x2 = (-b - Math.sqrt(d)) / (2*a);
+            System.out.println("x1= " +x1 + "x2= " + x2);
+        }
+
+//        assertEquals(quadraticEquationChecker.checkQuadraticEquation(a, b, c), "The 'a' coefficient should not be zero!") ;
     }
 
     @Test
@@ -39,8 +59,28 @@ public class QuadraticEquation {
         int a = 10;
         int b = 10;
         int c = 12;
+        double x1;
+        double x2;
+        double d;
+        d = (b * b) - (4 * a * c);
 
-        assertEquals(quadraticEquationChecker.checkQuadraticEquation(a, b, c), "No roots on the set of real numbers!") ;
+        if (a==0) {
+            System.out.println("The 'a' coefficient should not be zero!");
+        }
+        else if (d < 0) {
+            System.out.println("No roots on the set of real numbers!");
+        }
+        else if (d ==0) {
+            x1 = (-b) / (2*a);
+            System.out.println("x1 = x2 = " + x1);
+        }
+        else {
+            x1 = (-b + Math.sqrt(d)) / (2*a);
+            x2 = (-b - Math.sqrt(d)) / (2*a);
+            System.out.println("x1= " +x1 + "x2= " + x2);
+        }
+
+//        assertEquals(quadraticEquationChecker.checkQuadraticEquation(a, b, c), "No roots on the set of real numbers!") ;
     }
 
     @Test
@@ -48,8 +88,28 @@ public class QuadraticEquation {
         int a = 9;
         int b = 12;
         int c = 4;
+        double x1;
+        double x2;
+        double d;
+        d = (b * b) - (4 * a * c);
 
-        assertEquals(quadraticEquationChecker.checkQuadraticEquation(a, b, c), "Two real, identical roots: [x1 && x2] = -0.6666666666666666") ;
+        if (a==0) {
+            System.out.println("The 'a' coefficient should not be zero!");
+        }
+        else if (d < 0) {
+            System.out.println("No roots on the set of real numbers!");
+        }
+        else if (d ==0) {
+            x1 = (-b) / (2*a);
+            System.out.println("x1 = x2 = " + x1);
+        }
+        else {
+            x1 = (-b + Math.sqrt(d)) / (2*a);
+            x2 = (-b - Math.sqrt(d)) / (2*a);
+            System.out.println("x1= " +x1 + "x2= " + x2);
+        }
+
+//        assertEquals(quadraticEquationChecker.checkQuadraticEquation(a, b, c), "Two real, identical roots: [x1 && x2] = -0.6666666666666666") ;
     }
 
     @DataProvider(name = "dataProvider")
