@@ -13,6 +13,15 @@ public class PassFailChecker {
 //        TODO implements result
         String result = "";
 
+        if (number >=50) {
+            result = "PASS";
+            System.out.println("PASS");
+        } else {
+            result = "FAIL";
+            System.out.println("FAIL");
+        }
+        System.out.println("DONE");
+
         return result;
     }
 }

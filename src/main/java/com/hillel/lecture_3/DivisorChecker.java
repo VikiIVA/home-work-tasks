@@ -12,6 +12,14 @@ public class DivisorChecker {
         //        TODO implements result
         String result = "";
 
+        if (divisor % number == 0){
+            result = "The number " + number + " is divisor of the number " + divisor;
+            System.out.println("The number " + number + " is divisor of the number " + divisor);
+        } else {
+            result = "The number " + number + " is not divisor of the number " + divisor;
+            System.out.println("The number " + number + " is not divisor of the number " + divisor);
+        }
+
         return result;
     }
 }

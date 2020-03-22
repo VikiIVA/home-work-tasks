@@ -12,6 +12,11 @@ public class MinValueChecker {
 
 //        TODO implements result
         int result = 0;
+        for (int i = 1; i < values.length; i++ )
+            if (values [i] <= result) {
+                result = values [i];
+                System.out.println(result);
+            }
 
         return result;
     }

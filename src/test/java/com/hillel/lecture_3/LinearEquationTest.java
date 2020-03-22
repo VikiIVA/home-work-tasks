@@ -19,16 +19,7 @@ public class LinearEquationTest {
         int a = 4;
         int b = 10;
 
-        if (a == 0 || b == 0) {
-            System.out.println("x = " + 0);
-        } else if (a + b > 0) {
-            System.out.println("x = " + (-b / a));
-        } else if (a + b < 0){
-            System.out.println("x: " + (b / a));
-        } else if (a +b ==0 || a -b ==0) {
-            System.out.println("Result: x = 0");
-        }
-//        assertEquals(linearEquationChecker.linearEquation(a, b), -2);
+        assertEquals(linearEquationChecker.linearEquation(a, b), -2);
     }
 
     @Test
@@ -36,17 +27,7 @@ public class LinearEquationTest {
         int a = 0;
         int b = 10;
 
-        if (a == 0 || b == 0) {
-            System.out.println("x = " + 0);
-        } else if (a + b > 0) {
-            System.out.println("x = " + (-b / a));
-        } else if (a + b < 0){
-            System.out.println("x: " + (b / a));
-        } else if (a +b ==0 || a -b ==0) {
-            System.out.println("Result: x = 0");
-        }
-
-//        assertEquals(linearEquationChecker.linearEquation(a, b), 0);
+        assertEquals(linearEquationChecker.linearEquation(a, b), 0);
     }
 
     @Test
@@ -54,16 +35,6 @@ public class LinearEquationTest {
         int a = 4;
         int b = 0;
 
-        if (a == 0 || b == 0) {
-            System.out.println("x = " + 0);
-        } else if (a + b > 0) {
-            System.out.println("x = " + (-b / a));
-        } else if (a + b < 0){
-            System.out.println("x: " + (b / a));
-        } else if (a +b ==0 || a -b ==0) {
-            System.out.println("Result: x = 0");
-        }
-
-//        assertEquals(linearEquationChecker.linearEquation(a, b), 0);
+        assertEquals(linearEquationChecker.linearEquation(a, b), 0);
     }
 }

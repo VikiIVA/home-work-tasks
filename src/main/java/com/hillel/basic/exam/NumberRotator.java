@@ -18,6 +18,12 @@ package com.hillel.basic.exam;
 public class NumberRotator {
 
     public static long rotate(long n) {
-        return 0;
+        int result = 0;
+        while (n > 0) {
+            result++;
+            n /= 10;
+        } return result;
     }
-}
+
+    }
+

@@ -15,16 +15,8 @@ public class ReverseStringTestTask {
 
     @Test(dataProvider = "stringProvider")
     public void palindromeTest(String word, String expectedResult) {
-        char[] string = new char[5];
-            for(int i = 0; i < string.length/2-1; i++){
-                if(string[i] != string[string.length-i-1]){
-                    System.out.println(word + " " + expectedResult);
-                }
 
-        System.out.println(word + " " + expectedResult);
-    }
-
-//        assertEquals(reverseStringChecker.getReversString(word), expectedResult); ;
+       assertEquals(reverseStringChecker.getReversString(word), expectedResult); ;
     }
 
 

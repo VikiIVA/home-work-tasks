@@ -12,7 +12,7 @@ public class FibonacciNumbersTestTask {
     private FibonacciNumbersChecker fibonacciNumbersChecker = new FibonacciNumbersChecker();
 
     @Test
-    public void fromDecimalToHexadecimalTest() {
+    public void getFibonacciNumbersTest() {
         int[] expectedResult = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181 };
 
        for (int i = 0; i < expectedResult.length; i++) {
@@ -21,6 +21,6 @@ public class FibonacciNumbersTestTask {
 
        }
 
-//        assertEquals(fibonacciNumbersChecker.getFibonacciNumbers(20), expectedResult) ;
+        assertEquals(fibonacciNumbersChecker.getFibonacciNumbers(20), expectedResult) ;
     }
 }

@@ -17,26 +17,14 @@ public class DiscountCountTest {
     @Test
     public void checkDiscountExist() {
         double price = 345.8;
-        int a = 1;
 
-        if (price > 1000) {
-            System.out.println("The total amount with discount is: " + price * 0.85);
-        } else {
-            System.out.println("Discount is not provided");
-        }
-
-//        assertEquals(discountCountChecker.checkDiscountCount(price), 0.0);
+         assertEquals(discountCountChecker.checkDiscountCount(price), 0.0);
     }
 
     @Test
     public void checkDiscountNotExist() {
         double price = 1345.76;
-        if (price > 1000) {
-            System.out.println("The total amount with discount is: " + price * 0.85);
-        } else {
-            System.out.println("Discount is not provided");
-        }
 
-//        assertEquals(discountCountChecker.checkDiscountCount(price), 1143.896);
+        assertEquals(discountCountChecker.checkDiscountCount(price), 1143.896);
     }
 }

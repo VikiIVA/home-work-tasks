@@ -16,14 +16,8 @@ public class BelongsToIntervalTest {
     @Test(dataProvider = "numbersProvider")
     public void checkNumberInInterval(int from, int to, int number, String message) {
 
-        if (number >= from && number <= to) {
-            System.out.println(message);
-        } else {
-            System.out.println("Number " + number + " not belong to interval [-5; 3]");
-        }
 
-
-//        assertEquals(belongsToIntervalChecker.checkNumberInInterval(from, to, number), message);
+        assertEquals(belongsToIntervalChecker.checkNumberInInterval(from, to, number), message);
     }
 
     @DataProvider(name = "numbersProvider")

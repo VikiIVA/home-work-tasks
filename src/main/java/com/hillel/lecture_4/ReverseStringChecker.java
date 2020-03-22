@@ -12,6 +12,27 @@ public class ReverseStringChecker {
 
 //        TODO implements result
         String result = "";
+        char[] word =value.toCharArray();
+        for(int i=0;i<(word.length);i++)
+        {
+            if(word[i]!=' ')
+            {
+                result=result+word[i];
+            }
+            else
+            {
+                for(int c=result.length();c>0;c--)
+                {
+                    System.out.print(result.charAt(c-1));
+                }
+                System.out.print(" ");
+                result="";
+            }
+        }
+        for(int c=result.length();c>0;c--)
+        {
+            System.out.print(result.charAt(c-1));
+        }
 
         return result;
     }

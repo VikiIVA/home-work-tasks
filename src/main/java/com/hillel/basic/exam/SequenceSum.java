@@ -25,6 +25,30 @@ package com.hillel.basic.exam;
 public class SequenceSum {
 
     public static String showSequence(int value) {
-        return null;
+
+        int sumVal = 0;
+        String result = "";
+        int n = value;
+        for (int i = 0; i <= n; i++)
+        {
+            if (n == 0)
+            {
+                result += i + "=";
+            }
+            else if (n < 0)
+            {
+                result += n + "<";
+            }
+            else
+            if (i == n)
+            {
+                result += i + " = ";
+            }
+            else
+                result += i + "+";
+            sumVal += i;
+        }
+        result += sumVal;
+        return result;
     }
 }

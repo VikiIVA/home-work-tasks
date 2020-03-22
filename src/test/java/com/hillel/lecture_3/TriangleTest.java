@@ -16,27 +16,7 @@ public class TriangleTest {
     @Test(dataProvider = "triangleProvider")
     public void checkTriangle(int a, int b, int c, String message) {
 
-        if (a == b) {
-            if ( a!= c) {
-                System.out.println("Isosceles triangle!");
-            } else {
-                System.out.println("No isosceles triangle!");
-            }
-
-        } else if (a == c) {
-            if (a != b) {
-                System.out.println("Isosceles triangle!");
-            }else {
-                System.out.println("No isosceles triangle!");
-            }
-        }else if (c == b) {
-            if (c != a) {
-                System.out.println("Isosceles triangle!");
-            }else {
-                System.out.println("No isosceles triangle!");
-            }
-        }
-//        assertEquals(triangleChecker.isTriangleIsosceles(a, b, c), message); ;
+        assertEquals(triangleChecker.isTriangleIsosceles(a, b, c), message); ;
     }
 
     @DataProvider(name = "triangleProvider")

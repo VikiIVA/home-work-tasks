@@ -12,6 +12,37 @@ public class TriangleChecker {
 
 //        TODO implements result
         String result = "";
+        if (a == b) {
+            if ( a!= c) {
+                result = "Isosceles triangle!";
+                System.out.println("Isosceles triangle!");
+            } else {
+                result = "No isosceles triangle!";
+                System.out.println("No isosceles triangle!");
+            }
+
+        } else if (a == c) {
+            if (a != b) {
+                result = "Isosceles triangle!";
+                System.out.println("Isosceles triangle!");
+            }else {
+                result = "No isosceles triangle!";
+                System.out.println("No isosceles triangle!");
+            }
+        }else if (c == b) {
+            if (c != a) {
+                result = "Isosceles triangle!";
+                System.out.println("Isosceles triangle!");
+            }else {
+                result = "No isosceles triangle!";
+                System.out.println("No isosceles triangle!");
+            }
+        } else if (a != b && b != c) {
+            if(a != c) {
+                result = "No isosceles triangle!";
+                System.out.println("No isosceles triangle!");
+            }
+        }
 
         return result;
     }
