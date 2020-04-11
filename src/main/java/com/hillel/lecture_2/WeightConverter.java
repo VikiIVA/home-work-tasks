@@ -7,18 +7,20 @@ import io.qameta.allure.Step;
  */
 public class WeightConverter {
 
+    WeightMethods convertWeight = new WeightMethods();
+
     @Step
     public double kilogramsToPounds(double kilograms) {
 //        TODO implements result
-        double result = 0.0;
-        return (kilograms*2.20462);
+        double result = convertWeight.pounds(kilograms);
+        return result;
     }
 
     @Step
     public double poundsToKilograms(double pounds) {
 //        TODO implements result
-        double result = 0.0;
-        return (pounds/2.20460);
+        double result = convertWeight.kilograms(pounds);
+        return result;
     }
 
 }

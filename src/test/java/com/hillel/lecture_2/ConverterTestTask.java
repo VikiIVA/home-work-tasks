@@ -13,6 +13,7 @@ public class ConverterTestTask {
     private DistanceConverter distanceConverter = new DistanceConverter();
     private WeightConverter weightConverter = new WeightConverter();
     private SpeedConverter speedConverter = new SpeedConverter();
+    public Converters showMessage = new Converters();
 
     @Test
     public void celsiusToFahrenheitTest() {
